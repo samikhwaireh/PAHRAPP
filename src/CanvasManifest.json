@@ -131,10 +131,10 @@
     "UserLocale": "en-US"
   },
   "ScreenOrder": [
-    "Screen1",
-    "Screen1_1",
-    "Screen1_2",
-    "Screen1_4",
-    "Screen1_5"
+    "HomeScreen",
+    "Checkin/out",
+    "MyAttendanceScreen",
+    "CheckAttendanceScreen",
+    "MyLeavesScreen"
   ]
 }

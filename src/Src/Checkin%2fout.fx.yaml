@@ -1,4 +1,4 @@
-Screen1_1 As screen:
+"'Checkin/out' As screen":
 
     Rectangle1_1 As rectangle:
         BorderColor: =RGBA(220, 153, 153, 1)
@@ -300,7 +300,7 @@ Screen1_1 As screen:
         Fill: =RGBA(112, 119, 136, 1)
         Font: =Font.'Patrick Hand'
         Height: =55
-        OnSelect: =Navigate(Screen1_2)
+        OnSelect: =Navigate(MyAttendanceScreen)
         RadiusBottomLeft: =55
         RadiusBottomRight: =55
         RadiusTopLeft: =55

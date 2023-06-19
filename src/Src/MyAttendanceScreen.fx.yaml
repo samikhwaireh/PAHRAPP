@@ -1,13 +1,13 @@
-Screen1_4 As screen:
+MyAttendanceScreen As screen:
 
-    Rectangle1_4 As rectangle:
+    Rectangle1_2 As rectangle:
         BorderColor: =RGBA(220, 153, 153, 1)
         Fill: =RGBA(36, 52, 77, 1)
         Height: =230
         Width: =Parent.Width
         ZIndex: =1
 
-    Button1_4 As button:
+    Button1_2 As button:
         BorderColor: =
         BorderStyle: =BorderStyle.None
         BorderThickness: =0
@@ -31,7 +31,7 @@ Screen1_4 As screen:
         Y: =83
         ZIndex: =3
 
-    Image1_4 As image:
+    Image1_2 As image:
         Height: =38
         Image: |-
             ="data:image/svg+xml;utf8, "&EncodeUrl("
@@ -51,18 +51,18 @@ Screen1_4 As screen:
         Y: =25
         ZIndex: =4
 
-    Container1_4 As groupContainer.horizontalAutoLayoutContainer:
+    Container1_2 As groupContainer.horizontalAutoLayoutContainer:
         Height: =79
         LayoutAlignItems: =LayoutAlignItems.Center
         LayoutGap: =60
         LayoutJustifyContent: =LayoutJustifyContent.Center
         LayoutMode: =LayoutMode.Auto
         LayoutWrap: =true
-        X: =453
-        Y: =668
+        X: =433
+        Y: =664
         ZIndex: =5
 
-        Image1_37 As image:
+        Image1_32 As image:
             Height: =38
             Image: |-
                 ="data:image/svg+xml;utf8, "&EncodeUrl("<svg width='45' height='45' viewBox='0 0 45 45' fill='none' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'>
@@ -81,7 +81,7 @@ Screen1_4 As screen:
             Y: =531
             ZIndex: =1
 
-        Image1_38 As image:
+        Image1_29 As image:
             Height: =38
             Image: |-
                 ="data:image/svg+xml;utf8, "&EncodeUrl("<svg width='45' height='45' viewBox='0 0 45 45' fill='none' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'>
@@ -100,7 +100,7 @@ Screen1_4 As screen:
             Y: =531
             ZIndex: =2
 
-        Image1_39 As image:
+        Image1_31 As image:
             Height: =38
             Image: |-
                 ="data:image/svg+xml;utf8, "&EncodeUrl("<svg width='45' height='45' viewBox='0 0 45 45' fill='none' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'>
@@ -118,7 +118,7 @@ Screen1_4 As screen:
             Y: =531
             ZIndex: =3
 
-        Image1_40 As image:
+        Image1_30 As image:
             Height: =38
             Image: |-
                 ="data:image/svg+xml;utf8, "&EncodeUrl("<svg width='53' height='53' viewBox='0 0 53 53' fill='none' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'>
@@ -149,7 +149,7 @@ Screen1_4 As screen:
             Y: =531
             ZIndex: =4
 
-    Label7_7 As label:
+    Label7_5 As label:
         Color: =RGBA(255, 255, 255, 1)
         Font: =Font.'Patrick Hand'
         FontWeight: =FontWeight.Semibold
@@ -160,12 +160,12 @@ Screen1_4 As screen:
         Y: =23
         ZIndex: =11
 
-    Button6_8 As button:
+    Button6 As button:
         BorderStyle: =BorderStyle.None
         Color: =RGBA(0, 0, 0, 1)
         Fill: =RGBA(242, 242, 242, 1)
         Font: =Font.'Patrick Hand'
-        OnSelect: =Navigate(Screen1_5)
+        OnSelect: =Navigate(CheckAttendanceScreen)
         RadiusBottomLeft: =2
         RadiusBottomRight: =2
         RadiusTopLeft: =2
@@ -175,7 +175,7 @@ Screen1_4 As screen:
         Y: =105
         ZIndex: =15
 
-    Button6_9 As button:
+    Button6_1 As button:
         BorderStyle: =BorderStyle.None
         Color: =RGBA(0, 0, 0, 1)
         Fill: =RGBA(242, 242, 242, 1)
@@ -189,7 +189,7 @@ Screen1_4 As screen:
         Y: =105
         ZIndex: =16
 
-    Button6_10 As button:
+    Button6_2 As button:
         BorderStyle: =BorderStyle.None
         Color: =RGBA(0, 0, 0, 1)
         Fill: =RGBA(242, 242, 242, 1)
@@ -203,7 +203,7 @@ Screen1_4 As screen:
         Y: =105
         ZIndex: =17
 
-    Button6_11 As button:
+    Button6_3 As button:
         BorderStyle: =BorderStyle.None
         Color: =RGBA(0, 0, 0, 1)
         Fill: =RGBA(242, 242, 242, 1)
@@ -212,132 +212,396 @@ Screen1_4 As screen:
         RadiusBottomRight: =2
         RadiusTopLeft: =2
         RadiusTopRight: =2
-        Text: ="Tejected"
+        Text: ="Rejected"
         X: =847
         Y: =105
         ZIndex: =18
 
-    Rectangle6_2 As rectangle:
+    Container4 As groupContainer.verticalAutoLayoutContainer:
+        DropShadow: =DropShadow.Semilight
+        Fill: =RGBA(245, 245, 245, 1)
+        Height: =396
+        LayoutDirection: =LayoutDirection.Vertical
+        LayoutGap: =10
+        LayoutMode: =LayoutMode.Auto
+        LayoutOverflowY: =LayoutOverflow.Scroll
+        PaddingBottom: =10
+        PaddingLeft: =10
+        PaddingRight: =10
+        PaddingTop: =10
+        Width: =314
+        X: =515
+        Y: =195
+        ZIndex: =19
+
+        Label8 As label:
+            FontWeight: =FontWeight.Semibold
+            Text: ="All attendances"
+            ZIndex: =1
+
+        Container6 As groupContainer.manualLayoutContainer:
+            AlignInContainer: =AlignInContainer.SetByContainer
+            Fill: =RGBA(219, 219, 219, 1)
+            Height: =70
+            LayoutMinHeight: =100
+            LayoutMinWidth: =250
+            Width: =280
+            ZIndex: =2
+
+            Label9 As label:
+                Text: ="Ferry Late"
+                Width: =70
+                X: =10
+                Y: =15
+                ZIndex: =1
+
+            Label9_1 As label:
+                Text: ="March 21,2022"
+                Width: =90
+                X: =80
+                Y: =15
+                ZIndex: =2
+
+            Label9_2 As label:
+                Color: =RGBA(141, 198, 63, 1)
+                FontWeight: =FontWeight.Bold
+                Text: ="Approved"
+                Width: =102
+                X: =170
+                Y: =15
+                ZIndex: =3
+
+        Container6_1 As groupContainer.manualLayoutContainer:
+            AlignInContainer: =AlignInContainer.SetByContainer
+            Fill: =RGBA(219, 219, 219, 1)
+            Height: =70
+            LayoutMinHeight: =100
+            LayoutMinWidth: =250
+            Width: =280
+            ZIndex: =3
+
+            Label9_3 As label:
+                Text: ="WFH"
+                Width: =70
+                X: =10
+                Y: =15
+                ZIndex: =1
+
+            Label9_4 As label:
+                Text: ="March 15,2022"
+                Width: =90
+                X: =80
+                Y: =15
+                ZIndex: =2
+
+            Label9_5 As label:
+                Color: =RGBA(0, 134, 208, 1)
+                FontWeight: =FontWeight.Bold
+                Text: ="Pending"
+                Width: =102
+                X: =170
+                Y: =15
+                ZIndex: =3
+
+        Container6_2 As groupContainer.manualLayoutContainer:
+            AlignInContainer: =AlignInContainer.SetByContainer
+            Fill: =RGBA(219, 219, 219, 1)
+            Height: =70
+            LayoutMinHeight: =100
+            LayoutMinWidth: =250
+            Width: =280
+            ZIndex: =4
+
+            Label9_6 As label:
+                Text: ="WFH"
+                Width: =70
+                X: =10
+                Y: =15
+                ZIndex: =1
+
+            Label9_7 As label:
+                Text: ="March 17,2022"
+                Width: =90
+                X: =80
+                Y: =15
+                ZIndex: =2
+
+            Label9_8 As label:
+                Color: =RGBA(0, 134, 208, 1)
+                FontWeight: =FontWeight.Bold
+                Text: ="Pending"
+                Width: =102
+                X: =170
+                Y: =15
+                ZIndex: =3
+
+        Container6_3 As groupContainer.manualLayoutContainer:
+            AlignInContainer: =AlignInContainer.SetByContainer
+            Fill: =RGBA(219, 219, 219, 1)
+            Height: =70
+            LayoutMinHeight: =100
+            LayoutMinWidth: =250
+            Width: =280
+            ZIndex: =5
+
+            Label9_9 As label:
+                Text: ="WFH"
+                Width: =70
+                X: =10
+                Y: =15
+                ZIndex: =1
+
+            Label9_10 As label:
+                Text: ="March 24,2022"
+                Width: =90
+                X: =80
+                Y: =15
+                ZIndex: =2
+
+            Label9_11 As label:
+                Color: =RGBA(168, 0, 0, 1)
+                FontWeight: =FontWeight.Bold
+                Text: ="Rejected"
+                Width: =102
+                X: =170
+                Y: =15
+                ZIndex: =3
+
+        Container6_4 As groupContainer.manualLayoutContainer:
+            AlignInContainer: =AlignInContainer.SetByContainer
+            Fill: =RGBA(219, 219, 219, 1)
+            Height: =70
+            LayoutMinHeight: =100
+            LayoutMinWidth: =250
+            Width: =280
+            ZIndex: =6
+
+            Label9_12 As label:
+                Text: ="WFH"
+                Width: =70
+                X: =10
+                Y: =15
+                ZIndex: =1
+
+            Label9_13 As label:
+                Text: ="March 24,2022"
+                Width: =90
+                X: =80
+                Y: =15
+                ZIndex: =2
+
+            Label9_14 As label:
+                Color: =RGBA(168, 0, 0, 1)
+                FontWeight: =FontWeight.Bold
+                Text: ="Rejected"
+                Width: =102
+                X: =170
+                Y: =15
+                ZIndex: =3
+
+    Rectangle6 As rectangle:
         Fill: =RGBA(0, 0, 0, 1)
         Height: =2
         X: =365
         Y: =140
         ZIndex: =20
 
-    "Icon4_2 As icon.'3DPrinting'":
+    Container4_1 As groupContainer.verticalAutoLayoutContainer:
+        DropShadow: =DropShadow.Semilight
+        Fill: =RGBA(245, 245, 245, 1)
+        Height: =396
+        LayoutDirection: =LayoutDirection.Vertical
+        LayoutGap: =10
+        LayoutMode: =LayoutMode.Auto
+        LayoutOverflowY: =LayoutOverflow.Scroll
+        PaddingBottom: =10
+        PaddingLeft: =10
+        PaddingRight: =10
+        PaddingTop: =10
+        Width: =314
+        X: =886
+        Y: =195
+        ZIndex: =21
+
+        Label8_1 As label:
+            Color: =RGBA(0, 134, 208, 1)
+            FontWeight: =FontWeight.Semibold
+            Text: ="Pending"
+            ZIndex: =1
+
+        Container6_5 As groupContainer.manualLayoutContainer:
+            AlignInContainer: =AlignInContainer.SetByContainer
+            Fill: =RGBA(219, 219, 219, 1)
+            Height: =70
+            LayoutMinHeight: =100
+            LayoutMinWidth: =250
+            Width: =280
+            ZIndex: =2
+
+            Label9_15 As label:
+                Text: ="Ferry Late"
+                Width: =70
+                X: =10
+                Y: =15
+                ZIndex: =1
+
+            Label9_16 As label:
+                Text: ="March 21,2022"
+                Width: =90
+                X: =80
+                Y: =15
+                ZIndex: =2
+
+            Label9_17 As label:
+                Color: =RGBA(141, 198, 63, 1)
+                FontWeight: =FontWeight.Bold
+                Text: ="Approved"
+                Width: =102
+                X: =170
+                Y: =15
+                ZIndex: =3
+
+        Container6_6 As groupContainer.manualLayoutContainer:
+            AlignInContainer: =AlignInContainer.SetByContainer
+            Fill: =RGBA(219, 219, 219, 1)
+            Height: =70
+            LayoutMinHeight: =100
+            LayoutMinWidth: =250
+            Width: =280
+            ZIndex: =3
+
+            Label9_18 As label:
+                Text: ="WFH"
+                Width: =70
+                X: =10
+                Y: =15
+                ZIndex: =1
+
+            Label9_19 As label:
+                Text: ="March 15,2022"
+                Width: =90
+                X: =80
+                Y: =15
+                ZIndex: =2
+
+            Label9_20 As label:
+                Color: =RGBA(0, 134, 208, 1)
+                FontWeight: =FontWeight.Bold
+                Text: ="Pending"
+                Width: =102
+                X: =170
+                Y: =15
+                ZIndex: =3
+
+        Container6_7 As groupContainer.manualLayoutContainer:
+            AlignInContainer: =AlignInContainer.SetByContainer
+            Fill: =RGBA(219, 219, 219, 1)
+            Height: =70
+            LayoutMinHeight: =100
+            LayoutMinWidth: =250
+            Width: =280
+            ZIndex: =4
+
+            Label9_21 As label:
+                Text: ="WFH"
+                Width: =70
+                X: =10
+                Y: =15
+                ZIndex: =1
+
+            Label9_22 As label:
+                Text: ="March 17,2022"
+                Width: =90
+                X: =80
+                Y: =15
+                ZIndex: =2
+
+            Label9_23 As label:
+                Color: =RGBA(0, 134, 208, 1)
+                FontWeight: =FontWeight.Bold
+                Text: ="Pending"
+                Width: =102
+                X: =170
+                Y: =15
+                ZIndex: =3
+
+        Container6_8 As groupContainer.manualLayoutContainer:
+            AlignInContainer: =AlignInContainer.SetByContainer
+            Fill: =RGBA(219, 219, 219, 1)
+            Height: =70
+            LayoutMinHeight: =100
+            LayoutMinWidth: =250
+            Width: =280
+            ZIndex: =5
+
+            Label9_24 As label:
+                Text: ="WFH"
+                Width: =70
+                X: =10
+                Y: =15
+                ZIndex: =1
+
+            Label9_25 As label:
+                Text: ="March 24,2022"
+                Width: =90
+                X: =80
+                Y: =15
+                ZIndex: =2
+
+            Label9_26 As label:
+                Color: =RGBA(168, 0, 0, 1)
+                FontWeight: =FontWeight.Bold
+                Text: ="Rejected"
+                Width: =102
+                X: =170
+                Y: =15
+                ZIndex: =3
+
+        Container6_9 As groupContainer.manualLayoutContainer:
+            AlignInContainer: =AlignInContainer.SetByContainer
+            Fill: =RGBA(219, 219, 219, 1)
+            Height: =70
+            LayoutMinHeight: =100
+            LayoutMinWidth: =250
+            Width: =280
+            ZIndex: =6
+
+            Label9_27 As label:
+                Text: ="WFH"
+                Width: =70
+                X: =10
+                Y: =15
+                ZIndex: =1
+
+            Label9_28 As label:
+                Text: ="March 24,2022"
+                Width: =90
+                X: =80
+                Y: =15
+                ZIndex: =2
+
+            Label9_29 As label:
+                Color: =RGBA(168, 0, 0, 1)
+                FontWeight: =FontWeight.Bold
+                Text: ="Rejected"
+                Width: =102
+                X: =170
+                Y: =15
+                ZIndex: =3
+
+    Rectangle7 As rectangle:
+        BorderColor: =RGBA(255, 255, 255, 1)
+        Fill: =RGBA(255, 255, 255, 1)
+        Height: =497
+        Width: =290
+        X: =995
+        Y: =167
+        ZIndex: =22
+
+    "Icon4 As icon.'3DPrinting'":
         Color: =RGBA(255, 255, 255, 1)
         Icon: =Icon.Add
         X: =1200
         Y: =12
         ZIndex: =23
-
-    Label10_1 As label:
-        FontWeight: =FontWeight.Bold
-        Text: ="Choose Date"
-        X: =453
-        Y: =158
-        ZIndex: =24
-
-    DatePicker1_1 As datepicker:
-        BorderColor: =RGBA(36, 52, 77, 1)
-        X: =537
-        Y: =203
-        ZIndex: =25
-
-    Container7_1 As groupContainer.manualLayoutContainer:
-        Height: =133
-        X: =453
-        Y: =262
-        ZIndex: =26
-
-        Radio1_1 As radio:
-            Default: ="1"
-            Height: =133
-            Items: =["On Duty","In time","Travel Request","Out Time","WFH","Ferry late"]
-            Layout: =Layout.Horizontal
-            LineHeight: =2.8
-            RadioSize: =30
-            Width: =474
-            X: =12
-            ZIndex: =1
-
-    Container8_1 As groupContainer.manualLayoutContainer:
-        Height: =72
-        X: =453
-        Y: =407
-        ZIndex: =27
-
-        TextInput2_1 As text:
-            BorderStyle: =BorderStyle.None
-            Default: =""
-            Height: =72
-            HintText: ="Write requested reason!"
-            Width: =500
-            ZIndex: =1
-
-    Button7_3 As button:
-        Align: =Align.Left
-        BorderStyle: =BorderStyle.None
-        Fill: =RGBA(36, 52, 77, 1)
-        Text: ="Attendances"
-        Width: =242
-        X: =480
-        Y: =503
-        ZIndex: =28
-
-    Icon5_3 As icon.Add:
-        Color: =RGBA(255, 255, 255, 1)
-        Height: =28
-        Icon: =Icon.Add
-        Width: =27
-        X: =681
-        Y: =509
-        ZIndex: =29
-
-    Button7_4 As button:
-        Align: =Align.Left
-        BorderStyle: =BorderStyle.None
-        Fill: =RGBA(36, 52, 77, 1)
-        Text: ="Leaves"
-        Width: =242
-        X: =480
-        Y: =550
-        ZIndex: =30
-
-    Icon5_4 As icon.Add:
-        Color: =RGBA(255, 255, 255, 1)
-        Height: =28
-        Icon: =Icon.Add
-        Width: =27
-        X: =681
-        Y: =556
-        ZIndex: =31
-
-    Button7_5 As button:
-        Align: =Align.Left
-        BorderStyle: =BorderStyle.None
-        Fill: =RGBA(36, 52, 77, 1)
-        Text: ="Overtimes"
-        Width: =242
-        X: =480
-        Y: =598
-        ZIndex: =32
-
-    Icon5_5 As icon.Add:
-        Color: =RGBA(255, 255, 255, 1)
-        Height: =28
-        Icon: =Icon.Add
-        Width: =27
-        X: =681
-        Y: =604
-        ZIndex: =33
-
-    Button7_6 As button:
-        BorderStyle: =BorderStyle.None
-        Fill: =RGBA(112, 119, 136, 1)
-        Text: ="Submit"
-        Width: =181
-        X: =760
-        Y: =598
-        ZIndex: =34
 

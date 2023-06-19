@@ -1,4 +1,4 @@
-Screen1_5 As screen:
+MyLeavesScreen As screen:
 
     Rectangle1_5 As rectangle:
         BorderColor: =RGBA(220, 153, 153, 1)

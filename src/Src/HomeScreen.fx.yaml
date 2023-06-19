@@ -1,4 +1,4 @@
-Screen1 As screen:
+HomeScreen As screen:
 
     Rectangle1 As rectangle:
         BorderColor: =RGBA(220, 153, 153, 1)
@@ -98,7 +98,7 @@ Screen1 As screen:
         BorderStyle: =BorderStyle.None
         BorderThickness: =0
         Fill: =RGBA(112, 119, 136, 1)
-        OnSelect: =Navigate(Screen1_1)
+        OnSelect: =Navigate('Checkin/out')
         Size: =12
         Text: ="My attendences"
         X: =99
