@@ -1,4 +1,4 @@
-# HR App Technical Documentation
+# HR App 
 
 The HR App is a comprehensive solution designed to streamline HR processes and improve employee management. This documentation provides an overview of the key technical aspects of the app.
 
@@ -22,3 +22,11 @@ The HR App leverages Power Apps and Power Automate to automate HR processes and 
 - Power Automate: Power Automate is used to automate processes and workflows within the app.
 - ASP.NET 6: APIs are built using ASP.NET 6 to integrate HR operations with the app and external systems.
 - SharePoint Online: Some employee information, such as requests and vacation records, is stored and managed using SharePoint Online.
+
+## Image Screenshots
+Below are some screenshots of the HR App, showcasing its user interface and features:
+![EmpHomeScreen](https://github.com/samikhwaireh/PAHRAPP/blob/master/public/images/Screenshot010058.png)
+![LeaveReq](https://github.com/samikhwaireh/PAHRAPP/blob/master/public/images/Screenshot0155.png)
+![Image Description](https://github.com/samikhwaireh/PAHRAPP/blob/master/public/images/Screenshot10124.png)
+![checkoutscreen](https://github.com/samikhwaireh/PAHRAPP/blob/master/public/images/Screenshot10124.png)
+![attendance&overtime](https://github.com/samikhwaireh/PAHRAPP/blob/master/public/images/Screenshot10148.png)
